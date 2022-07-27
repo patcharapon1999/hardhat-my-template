@@ -7,11 +7,12 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
   const { deployer, tokenOwner } = await getNamedAccounts()
 
-  await deploy("Token", {
+  await deploy("BBA", {
+    contract: "Token",
     from: deployer,
     args: [tokenOwner],
     log: true,
   })
 }
 export default func
-func.tags = ["Token"]
+func.tags = ["TokenTag"]

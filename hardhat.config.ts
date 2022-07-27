@@ -19,7 +19,7 @@ const config: HardhatUserConfig = {
     },
     namedAccounts: {
         deployer: 0,
-        tokenOwner: 1,
+        tokenOwner: '0x5e4689173E401fe8b9EC49CBaDfCE1364Ecf5a6d',
     },
     networks: {
       "bsc-testnet": {
